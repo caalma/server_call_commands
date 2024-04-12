@@ -5,10 +5,9 @@ Servidor para llamar a comandos específicos del entorno del S.O.
 
 # Instalación
 
-```
+```python
 git clone https://github.com/caalma/server_call_commands
 pip3 install -r requirements.txt
-
 ```
 
 # Configuración
@@ -17,7 +16,7 @@ Editar el archivo `config.py`.
 
 # Uso
 
-```
+```python
 export BB_SERVER_CODE=codigo_propio_0123456789
 ./server_call_commands.py
 ```
