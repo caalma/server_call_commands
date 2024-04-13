@@ -7,6 +7,7 @@ Servidor para llamar a comandos específicos del entorno del S.O.
 
 ```bash
 git clone https://github.com/caalma/server_call_commands
+cd server_call_commands
 pip3 install -r requirements.txt
 ```
 
@@ -18,5 +19,5 @@ Editar el archivo `config.py`.
 
 ```bash
 export BB_SERVER_CODE=codigo_propio_0123456789
-./server_call_commands.py
+./server_call_commands.py &
 ```
