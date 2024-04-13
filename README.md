@@ -18,6 +18,5 @@ Editar el archivo `config.py`.
 ## Uso
 
 ```bash
-export BB_SERVER_CODE=codigo_propio_0123456789
 ./server_call_commands.py &
 ```

@@ -1,9 +1,7 @@
 # server
 
-# este codigo también puede modificarse definiendo la variable BB_SERVER_CODE
-# mediante el siguiente comando:
-# export BB_SERVER_CODE=codigo_personalizado
-# en caso de que exista la variable de entorno el siguiente valor es sobreescrito.
+# `server_code` también puede definirse con el contenido del
+# archivo BB_SERVER_CODE. Sinó tomará el valor de la siguiente variable
 server_code = '01'
 
 # host
@@ -11,8 +9,10 @@ host = '0.0.0.0'
 port = 9009
 
 # acciones
-stop_cmd = 'echo "stop" >> control.log'
-stop_msg = 'stop'
+u1 = 'a'
+u1_cmd = 'echo $(date) " - A " >> /tmp/scc_control.log'
+u1_msg = 'A ... done!'
 
-restart_cmd = 'echo "restart" >> control.log'
-restart_msg = 'restart'
+u2 = 'b'
+u2_cmd = 'echo $(date) " - B" >> /tmp/scc_control.log'
+u2_msg = 'B ... done!'
