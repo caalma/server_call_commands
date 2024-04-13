@@ -1,0 +1,11 @@
+#!/bin/bash
+# -*- coding: utf-8 -*-
+
+s=ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz
+c=''
+
+for i in {1..64} ; do
+    c="$c${s:RANDOM%${#s}:1}"
+done
+
+echo $c > BB_SERVER_CODE
